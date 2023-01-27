@@ -381,13 +381,13 @@ body {
 
 }
 
-.works-text {
+.works-text , .portfolio-text {
     color: #6C7890;
     text-align: center;
     margin-bottom: 0;
 }
 
-.works-title {
+.works-title , .portfolio-title {
     color: #081043;
     text-align: center;
     margin-top: 0.8rem;
@@ -496,4 +496,95 @@ body {
 .companies-img {
     display: block;
     margin: 1rem;
+}
+
+
+
+/* portfolio section */
+.portfolio{
+    padding: 2rem 0;
+    text-align: center;
+}
+.portfolios-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+.portfolio-item{
+    flex-basis: 23rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+}
+.portfolio-img{
+    width: 100%;
+}
+
+
+/* start footer */
+.footer{
+
+}
+.newsletter{
+    background-color: #2c57e4;
+    padding: 4rem 0;
+    color: #fff;
+}
+.newsletter-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsletter-text{
+
+}
+.newsletter-email{
+    background-color: #fff;
+    flex-basis: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 1.3rem 0.3rem 0.3rem ;
+    border-radius: 00.5rem;
+}
+.newsletter-txt{
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}
+.newsletter-btn{
+    background-color: #2f5bea;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+        
+
+}
+.newsletter-btn-img{
+    transform: rotateY(180deg);
+}
+
+/* start copyright */
+.copy-right{
+    color: #6c7890;
+    padding: 1rem 0;
+}
+.copy-right-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-right-text{
+
+}
+.copy-right-link{
+    text-decoration: none;
+    color: #0050C8;
 }
