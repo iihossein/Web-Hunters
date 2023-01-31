@@ -434,8 +434,9 @@ body {
 }
 
 .comments-container {
-    max-width: 65rem;
-    margin: 3rem auto 0 auto;
+
+    margin: 3rem 0 0 0;
+    padding: 0 7rem;
 }
 
 .comments {
@@ -451,7 +452,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 18rem;
+    min-height: 14rem;
     flex-basis: 20rem;
 }
 
@@ -559,6 +560,7 @@ body {
     border: none;
     outline: none;
     font-size: 1.6rem;
+    width: 100%;
 }
 
 .newsletter-btn {
@@ -588,6 +590,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .copy-right-text {}
@@ -607,6 +610,30 @@ body {
 @media only screen and (max-width: 1200px) {
     .container {
         max-width: 960px;
+    }
+    .comments-container {
+        padding: 0;
+    }
+
+    
+    .comments {
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .comment {
+        flex-basis: 17rem;
+        margin: 1rem;
+        min-height: 14rem;
+        
+    }
+
+    .portfolio-item{
+        flex-basis: 28rem;
+    }
+    .newsletter-text{
+        max-width: 28rem;
     }
 }
 
@@ -645,19 +672,40 @@ body {
     }
 
     .comments-container {
-        max-width: 90rem;
-        
+        padding: 0;
     }
 
-    .comments{
-        /* flex-shrink: 0; */
+    
+    .comments {
+        flex-shrink: 0;
         flex-wrap: wrap;
-        /* justify-content: center; */
+        padding: 0;
+        margin: 0;
     }
-    .comment{
-        flex-basis: 16rem;
-        margin:0.5rem;
+    
+    .comment {
+        flex-basis: 13rem;
+        margin: 0.5rem;
+        min-height: 14rem;
         
+    }
+    .comment-body {
+        font-size: 0.9rem !important;
+    }
+
+
+    .companies{
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+
+    .portfolio-item{
+        flex-basis: 20rem;
+    }
+
+    .newsletter-text{
+        max-width: 16rem;
+        font-size: 1.4rem;
     }
 
 }
@@ -714,10 +762,41 @@ body {
         font-weight: 900;
     }
 
-    .works-content-item{
+    .works-content-item {
         flex-basis: 14rem;
         margin-bottom: 1.5rem;
     }
+
+
+    .comments{
+        justify-content: center;
+    }
+    .comment{
+        flex-basis: 14rem;
+        margin: 0.8rem;
+
+    }
+    .comment-body {
+        font-size: 1rem !important;
+    }
+    .portfolio-item{
+        flex-basis: 100%;
+    }
+
+    .newsletter-wrapper{
+        flex-direction: column;
+    }
+    .newsletter-email{
+        flex-basis: auto;
+        width: 100%;
+    }
+    .newsletter-text{
+        max-width: 90%;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
 
 }
 
@@ -725,11 +804,30 @@ body {
     .container {
         max-width: 100%;
     }
-    .works-content-item{
+
+    .works-content-item {
         flex-basis: 100%;
     }
-    .works-content-text{
+
+    .works-content-text {
         margin: 0 auto;
         max-width: 80%;
+    }
+
+
+    .comments{
+        
+    }
+    .comment{
+        font-size: 1.4rem !important;
+        flex-basis: 20rem; 
+        margin: 1rem;
+
+    }
+    .copy-right-wrapper{
+        flex-direction: column-reverse;
+    }
+    .newsletter-btn{
+        padding: 1rem 1.2rem;
     }
 }
